@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon May  6 12:27:53 2024
+@author: hks9999
+초등학생 계산력 평가 6급 문제풀이
+"""
+
+import random
+
+for i in range(1,121) : 
+    if(i<=70) :
+        one = random.randint(3,30)
+        two = random.randint(3,30)
+        print(str(i)+")",one,"+",two,"=")
+        
+    if(i>70 and i<=120 ) :
+        one = random.randint(10,30)
+        two = random.randint(1,30)
+        if(two > one ) :
+            one, two = two, one
+        print(str(i)+")",one,"-",two,"=")
